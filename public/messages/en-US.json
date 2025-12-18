@@ -1,0 +1,11 @@
+{
+    "home": {
+        "title": "TODO List",
+        "description": "A simple and clean way to manage your daily tasks.",
+        "table": {
+            "id": "ID",
+            "task": "Task",
+            "status": "Status"
+        }
+    }
+}

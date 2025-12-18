@@ -1,0 +1,11 @@
+{
+    "home": {
+        "title": "Lista de Tareas",
+        "description": "Una forma simple y limpia de gestionar tus tareas diarias.",
+        "table": {
+            "id": "ID",
+            "task": "Tarea",
+            "status": "Estado"
+        }
+    }
+}
