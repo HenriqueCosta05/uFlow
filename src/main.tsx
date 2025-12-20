@@ -1,13 +1,13 @@
-import { StrictMode, Suspense } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import ErrorBoundary from './_errorBoundary'
 import App from './app'
 import './globals.css'
-import { LoaderComponent } from './components'
 
 createRoot(document.querySelector('#root')!).render(
     <StrictMode>
-        <Suspense fallback={<LoaderComponent />}>
+        <ErrorBoundary>
             <App />
-        </Suspense>
+        </ErrorBoundary>
     </StrictMode>
 )

@@ -1,11 +1,28 @@
 {
-    "home": {
-        "title": "Lista de Tareas",
-        "description": "Una forma simple y limpia de gestionar tus tareas diarias.",
-        "table": {
-            "id": "ID",
-            "task": "Tarea",
-            "status": "Estado"
+    "errors": {
+        "500": {
+            "title": "Algo salió mal.",
+            "message": "Ha ocurrido un error inesperado. Por favor, inténtalo de nuevo más tarde.",
+            "details": "Si el problema persiste, por favor contacta al soporte.",
+            "contactSupport": "Contactar Soporte",
+            "retry": "Reintentar",
+            "back": "Regresar"
+        },
+        "404": {
+            "title": "Página no encontrada.",
+            "message": "La página que buscas no existe.",
+            "details": "Si el problema persiste, por favor contacta al soporte.",
+            "contactSupport": "Contactar Soporte",
+            "retry": "Reintentar",
+            "back": "Regresar"
+        },
+        "401": {
+            "title": "Acceso no autorizado.",
+            "message": "No tienes permiso para ver esta página.",
+            "details": "Si el problema persiste, por favor contacta al soporte.",
+            "contactSupport": "Contactar Soporte",
+            "retry": "Reintentar",
+            "back": "Regresar"
         }
     }
 }

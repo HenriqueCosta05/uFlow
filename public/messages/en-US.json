@@ -1,11 +1,28 @@
 {
-    "home": {
-        "title": "TODO List",
-        "description": "A simple and clean way to manage your daily tasks.",
-        "table": {
-            "id": "ID",
-            "task": "Task",
-            "status": "Status"
+    "errors": {
+        "500": {
+            "title": "Something went wrong.",
+            "message": "An unexpected error has occurred. Please try again later.",
+            "details": "If the problem persists, please contact support.",
+            "contactSupport": "Contact Support",
+            "retry": "Retry",
+            "back": "Go Back"
+        },
+        "404": {
+            "title": "Page not found.",
+            "message": "The page you are looking for does not exist.",
+            "details": "If the problem persists, please contact support.",
+            "contactSupport": "Contact Support",
+            "retry": "Retry",
+            "back": "Go Back"
+        },
+        "401": {
+            "title": "Unauthorized access.",
+            "message": "You do not have permission to view this page.",
+            "details": "If the problem persists, please contact support.",
+            "contactSupport": "Contact Support",
+            "retry": "Retry",
+            "back": "Go Back"
         }
     }
 }

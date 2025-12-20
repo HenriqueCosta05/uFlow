@@ -1,11 +1,28 @@
 {
-    "home": {
-        "title": "Lista de Tarefas",
-        "description": "Uma forma simples e limpa de gerenciar suas tarefas diárias.",
-        "table": {
-            "id": "ID",
-            "task": "Tarefa",
-            "status": "Status"
+    "errors": {
+        "500": {
+            "title": "Oops... Algo deu errado!",
+            "message": "Ocorreu um erro interno no servidor. Por favor, tente novamente mais tarde.",
+            "details": "Se o problema persistir, entre em contato com o suporte.",
+            "contactSupport": "Contatar Suporte",
+            "retry": "Recarregar Página",
+            "back": "Voltar à Página Anterior"
+        },
+        "404": {
+            "title": "Página não encontrada.",
+            "message": "A página que você está procurando não existe.",
+            "details": "Se o problema persistir, entre em contato com o suporte.",
+            "contactSupport": "Contatar Suporte",
+            "retry": "Recarregar Página",
+            "back": "Voltar à Página Anterior"
+        },
+        "401": {
+            "title": "Acesso não autorizado.",
+            "message": "Você não tem permissão para ver esta página.",
+            "details": "Se o problema persistir, entre em contato com o suporte.",
+            "contactSupport": "Contatar Suporte",
+            "retry": "Recarregar Página",
+            "back": "Voltar à Página Anterior"
         }
     }
 }

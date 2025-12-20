@@ -1,48 +1,15 @@
-.h1 {
-    font-size: 2rem;
-    color: #333;
-    font-weight: 900;
-}
-
-.paragraph {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
-}
-
-.container {
-    width: 100%;
-    height: 100vh;
-    gap: 10px;
+.Home__Wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation-duration: 2s;
-    animation-name: attention-seeker-1;
+    max-height: 100vh;
+    height: 100%;
+    min-height: 100vh;
+    height: auto;
+    margin: auto;
 }
 
-.table {
-    width: 80%;
-    border-collapse: collapse;
-}
-
-.tableHeader {
-    background-color: #f5f5f5;
-    font-weight: bold;
-}
-
-.tableCell {
-    border: 1px solid #eee;
-    padding: 12px 15px;
-}
-
-@keyframes attention-seeker-1 {
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-3%);
-    }
+.Home__Progress {
+    width: 50%;
 }

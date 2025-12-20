@@ -1,0 +1,105 @@
+:root {
+    --text-color: var(--text);
+    --background-color: var(--background);
+    --background-light: var(--background-elevated);
+}
+
+.ErrorBoundary__Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+}
+
+.ErrorBoundary__Content {
+    max-width: 800px;
+    margin: 0 20px;
+    text-align: left;
+    padding: 40px;
+    transition: all 2s ease-in-out;
+    animation: moveUpDown 2s ease-in-out normal;
+}
+
+.ErrorBoundary__Illustration {
+    width: 450px;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+
+.ErrorBoundary__Title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ErrorBoundary__Message {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.ErrorBoundary__Details {
+    font-size: 14px;
+    color: #0f010f;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ErrorBoundary__Link {
+    color: var(--primary);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ErrorBoundary__Actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.ErrorBoundary__RetryButton {
+    background-color: var(--secondary);
+    color: var(--text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.ErrorBoundary__ContactSupportButton {
+    color: var(--text);
+    background-color: var(--secondary);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.ErrorBoundary__DetailsWrapper {
+    margin-top: 20px;
+}
+
+@keyframes moveUpDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
