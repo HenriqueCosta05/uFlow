@@ -1,0 +1,80 @@
+:root {
+    --navbar-height: 60px;
+    --navbar-bg-color: var(--background-elevated);
+}
+
+.Navbar__Wrapper {
+    width: 85%;
+    height: var(--navbar-height);
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-text-color);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 2rem auto;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 48px;
+}
+
+.Navbar__Logo__Wrapper {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.Navbar__Logo__Image {
+    height: 96px;
+    width: auto;
+}
+
+.Navbar__Logo__Text {
+    font-weight: bold;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    height: fit-content;
+}
+
+.Navbar__Menu {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.Navbar__MenuItem {
+    cursor: pointer;
+    transition: color 0.3s;
+    color: var(--secondary-light);
+}
+
+.Navbar__LanguageSelector__Wrapper {
+    margin-left: 1rem;
+}
+
+.Navbar__LanguageSelector__Item {
+    cursor: pointer;
+    transition: color 0.3s;
+    color: var(--secondary-light);
+}
+
+.Navbar__LanguageSelector__Item button {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.Navbar__LanguageSelector__Item button span {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.Navbar__LanguageSelector__Item button p {
+    width: fit-content;
+}

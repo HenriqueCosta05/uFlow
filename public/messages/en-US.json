@@ -24,5 +24,14 @@
             "retry": "Retry",
             "back": "Go Back"
         }
+    },
+    "landing": {
+        "navbar": {
+            "home": "Home",
+            "features": "Features",
+            "pricing": "Pricing",
+            "about": "About Us",
+            "contact": "Contact"
+        }
     }
 }

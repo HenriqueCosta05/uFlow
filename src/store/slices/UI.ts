@@ -1,18 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { UI } from '../../@types/UI'
+import type { Theme } from '../../@types'
 
 const initalUI: UI = {
     isLoading: false,
     errorMessage: undefined,
-    theme: {
-        type: 'light',
-        colors: {
-            primaryColor: '#6200EE',
-            secondaryColor: '#03DAC6',
-            backgroundColor: '#FFFFFF',
-            textColor: '#000000',
-        },
-    },
+    theme: undefined,
 }
 
 export const uiSlice = createSlice({
@@ -25,7 +18,7 @@ export const uiSlice = createSlice({
         setErrorMessage: (state, action: { payload: string | undefined }) => {
             state.errorMessage = action.payload
         },
-        setTheme: (state, action: { payload: UI['theme'] }) => {
+        setTheme: (state, action: { payload: Theme }) => {
             state.theme = action.payload
         },
     },

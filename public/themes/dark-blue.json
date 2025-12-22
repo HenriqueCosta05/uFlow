@@ -1,0 +1,151 @@
+{
+    "current": "dark",
+    "light": {
+        "primary": {
+            "light": "#60A5FA",
+            "main": "#3B82F6",
+            "dark": "#2563EB",
+            "darker": "#1D4ED8"
+        },
+        "secondary": {
+            "light": "#A78BFA",
+            "main": "#8B5CF6",
+            "dark": "#7C3AED",
+            "darker": "#6D28D9"
+        },
+        "background": {
+            "default": "#FFFFFF",
+            "paper": "#F9FAFB"
+        },
+        "surface": {
+            "main": "#F3F4F6",
+            "hovered": "#E5E7EB"
+        },
+        "text": {
+            "primary": "#111827",
+            "secondary": "#6B7280",
+            "disabled": "#9CA3AF",
+            "muted": "#D1D5DB"
+        },
+        "border": {
+            "main": "#E5E7EB",
+            "light": "#F3F4F6",
+            "lighter": "#F9FAFB"
+        },
+        "highlight": {
+            "main": "#3B82F6",
+            "light": "#DBEAFE",
+            "dark": "#1E40AF"
+        },
+        "error": {
+            "main": "#EF4444",
+            "light": "#FEE2E2",
+            "dark": "#DC2626",
+            "background": "#FEF2F2"
+        },
+        "success": {
+            "main": "#10B981",
+            "light": "#D1FAE5",
+            "dark": "#059669",
+            "background": "#ECFDF5"
+        },
+        "warning": {
+            "main": "#F59E0B",
+            "light": "#FEF3C7",
+            "dark": "#D97706",
+            "background": "#FFFBEB"
+        },
+        "info": {
+            "main": "#3B82F6",
+            "light": "#DBEAFE",
+            "dark": "#2563EB",
+            "background": "#EFF6FF"
+        },
+        "shadow": {
+            "small": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+            "medium": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+            "large": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+            "extraLarge": "0 20px 25px -5px rgba(0, 0, 0, 0.1)"
+        },
+        "radius": {
+            "small": "4px",
+            "medium": "8px",
+            "large": "12px",
+            "full": "9999px"
+        }
+    },
+    "dark": {
+        "primary": {
+            "light": "#60A5FA",
+            "main": "#3B82F6",
+            "dark": "#2563EB",
+            "darker": "#1E3A8A"
+        },
+        "secondary": {
+            "light": "#C084FC",
+            "main": "#A855F7",
+            "dark": "#9333EA",
+            "darker": "#7E22CE"
+        },
+        "background": {
+            "default": "#030712",
+            "paper": "#0F1629"
+        },
+        "surface": {
+            "main": "#1A2332",
+            "hovered": "#243049"
+        },
+        "text": {
+            "primary": "#F9FAFB",
+            "secondary": "#D1D5DB",
+            "disabled": "#6B7280",
+            "muted": "#4B5563"
+        },
+        "border": {
+            "main": "#1F2937",
+            "light": "#374151",
+            "lighter": "#4B5563"
+        },
+        "highlight": {
+            "main": "#3B82F6",
+            "light": "#1E40AF",
+            "dark": "#1E3A8A"
+        },
+        "error": {
+            "main": "#F87171",
+            "light": "#FCA5A5",
+            "dark": "#DC2626",
+            "background": "#7F1D1D"
+        },
+        "success": {
+            "main": "#34D399",
+            "light": "#6EE7B7",
+            "dark": "#059669",
+            "background": "#064E3B"
+        },
+        "warning": {
+            "main": "#FBBF24",
+            "light": "#FCD34D",
+            "dark": "#D97706",
+            "background": "#78350F"
+        },
+        "info": {
+            "main": "#60A5FA",
+            "light": "#93C5FD",
+            "dark": "#2563EB",
+            "background": "#1E3A8A"
+        },
+        "shadow": {
+            "small": "0 1px 2px 0 rgba(0, 0, 0, 0.3)",
+            "medium": "0 4px 6px -1px rgba(0, 0, 0, 0.4)",
+            "large": "0 10px 15px -3px rgba(0, 0, 0, 0.5)",
+            "extraLarge": "0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 0 60px rgba(59, 130, 246, 0.15)"
+        },
+        "radius": {
+            "small": "4px",
+            "medium": "8px",
+            "large": "12px",
+            "full": "9999px"
+        }
+    }
+}

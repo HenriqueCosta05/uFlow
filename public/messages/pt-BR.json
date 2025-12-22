@@ -24,5 +24,14 @@
             "retry": "Recarregar Página",
             "back": "Voltar à Página Anterior"
         }
+    },
+    "landing": {
+        "navbar": {
+            "home": "Início",
+            "features": "Recursos",
+            "pricing": "Preços",
+            "about": "Sobre Nós",
+            "contact": "Contato"
+        }
     }
 }

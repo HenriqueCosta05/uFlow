@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const mockAPI = axios.create({
+export const uFlowAPI = axios.create({
     baseURL: '/',
     headers: {
         'Content-Type': 'application/json',
