@@ -1,6 +1,6 @@
-import { BoxComponent } from 'lora-ds';
-import { Hero, Navbar } from '../../components';
-import { ThemeWrapper } from '../../wrappers';
+import { BoxComponent } from 'lora-ds'
+import { Hero, Navbar } from '../../components'
+import { ThemeWrapper } from '../../wrappers'
 
 export default function Home() {
     return (
@@ -8,7 +8,7 @@ export default function Home() {
             <BoxComponent>
                 <Navbar />
                 <Hero />
-            </BoxComponent >
+            </BoxComponent>
         </ThemeWrapper>
-    );
+    )
 }
