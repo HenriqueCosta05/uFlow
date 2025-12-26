@@ -1,28 +1,27 @@
 {
+    "shared": {
+        "contactSupport": "Contactar Soporte",
+        "retry": "Reintentar",
+        "back": "Regresar",
+        "loading": "Cargando...",
+        "getStarted": "Comenzar",
+        "learnMore": "Aprender Más"
+    },
     "errors": {
         "500": {
             "title": "Algo salió mal.",
             "message": "Ha ocurrido un error inesperado. Por favor, inténtalo de nuevo más tarde.",
-            "details": "Si el problema persiste, por favor contacta al soporte.",
-            "contactSupport": "Contactar Soporte",
-            "retry": "Reintentar",
-            "back": "Regresar"
+            "details": "Si el problema persiste, por favor contacta al soporte."
         },
         "404": {
             "title": "Página no encontrada.",
             "message": "La página que buscas no existe.",
-            "details": "Si el problema persiste, por favor contacta al soporte.",
-            "contactSupport": "Contactar Soporte",
-            "retry": "Reintentar",
-            "back": "Regresar"
+            "details": "Si el problema persiste, por favor contacta al soporte."
         },
         "401": {
             "title": "Acceso no autorizado.",
             "message": "No tienes permiso para ver esta página.",
-            "details": "Si el problema persiste, por favor contacta al soporte.",
-            "contactSupport": "Contactar Soporte",
-            "retry": "Reintentar",
-            "back": "Regresar"
+            "details": "Si el problema persiste, por favor contacta al soporte."
         }
     },
     "landing": {
@@ -31,7 +30,18 @@
             "features": "Características",
             "pricing": "Precios",
             "about": "Sobre Nosotros",
-            "contact": "Contacto"
+            "ctas": {
+                "login": "Iniciar Sesión"
+            }
+        },
+        "hero": {
+            "title": "Menos esfuerzo. Más resultados. Impulsado por IA.",
+            "description": "uFlow te ayuda a hacer las cosas con menos estrés y más confianza, para que puedas enfocarte en lo que realmente importa.",
+            "bulletPoints": {
+                "1": "Inteligencia basada en datos",
+                "2": "Escalable, seguro y confiable",
+                "3": "Impulsado por modelos de IA modernos"
+            }
         }
     }
 }

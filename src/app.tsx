@@ -1,8 +1,8 @@
-import { Provider } from 'react-redux'
-import { BrowserRouter, Route, Routes } from 'react-router'
-import './i18n/i18n'
-import { store } from './store/store'
-import { LandingScreen } from './views'
+import { Provider } from 'react-redux';
+import { BrowserRouter, Route, Routes } from 'react-router';
+import './i18n/i18n';
+import { store } from './store/store';
+import { LandingScreen } from './views';
 
 export default function App() {
     return (
@@ -13,5 +13,5 @@ export default function App() {
                 </Routes>
             </BrowserRouter>
         </Provider>
-    )
+    );
 }

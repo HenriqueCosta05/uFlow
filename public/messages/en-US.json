@@ -1,28 +1,27 @@
 {
+    "shared": {
+        "loading": "Loading...",
+        "getStarted": "Get Started",
+        "learnMore": "Learn More",
+        "retry": "Retry",
+        "back": "Go Back",
+        "contactSupport": "Contact Support"
+    },
     "errors": {
         "500": {
             "title": "Something went wrong.",
             "message": "An unexpected error has occurred. Please try again later.",
-            "details": "If the problem persists, please contact support.",
-            "contactSupport": "Contact Support",
-            "retry": "Retry",
-            "back": "Go Back"
+            "details": "If the problem persists, please contact support."
         },
         "404": {
             "title": "Page not found.",
             "message": "The page you are looking for does not exist.",
-            "details": "If the problem persists, please contact support.",
-            "contactSupport": "Contact Support",
-            "retry": "Retry",
-            "back": "Go Back"
+            "details": "If the problem persists, please contact support."
         },
         "401": {
             "title": "Unauthorized access.",
             "message": "You do not have permission to view this page.",
-            "details": "If the problem persists, please contact support.",
-            "contactSupport": "Contact Support",
-            "retry": "Retry",
-            "back": "Go Back"
+            "details": "If the problem persists, please contact support."
         }
     },
     "landing": {
@@ -30,8 +29,18 @@
             "home": "Home",
             "features": "Features",
             "pricing": "Pricing",
-            "about": "About Us",
-            "contact": "Contact"
+            "ctas": {
+                "login": "Log In"
+            }
+        },
+        "hero": {
+            "title": "Less Effort. More Results. Powered by AI.",
+            "description": "uFlow helps you get things done with less stress and more confidence—so you can focus on what really matters.",
+            "bulletPoints": {
+                "1": "Data-driven intelligence",
+                "2": "Scalable, secure, and reliable",
+                "3": "Powered by modern AI models"
+            }
         }
     }
 }

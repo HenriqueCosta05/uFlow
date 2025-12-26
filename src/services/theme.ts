@@ -17,206 +17,67 @@ export const applyThemeToDOM = (theme: Theme): void => {
         return;
     }
 
-    const stylesheet = document.styleSheets[0];
+    const root = document.documentElement;
 
-    stylesheet.insertRule(
-        `:root { --primary: ${colors.primary.main}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --primary-light: ${colors.primary.light}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --primary-dark: ${colors.primary.dark}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --primary-darker: ${colors.primary.darker}; }`,
-        stylesheet.cssRules.length
-    );
+    root.style.setProperty('--primary', colors.primary.main);
+    root.style.setProperty('--primary-light', colors.primary.light);
+    root.style.setProperty('--primary-dark', colors.primary.dark);
+    root.style.setProperty('--primary-darker', colors.primary.darker);
 
-    stylesheet.insertRule(
-        `:root { --secondary: ${colors.secondary.main}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --secondary-light: ${colors.secondary.light}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --secondary-dark: ${colors.secondary.dark}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --secondary-darker: ${colors.secondary.darker}; }`,
-        stylesheet.cssRules.length
-    );
+    root.style.setProperty('--secondary', colors.secondary.main);
+    root.style.setProperty('--secondary-light', colors.secondary.light);
+    root.style.setProperty('--secondary-dark', colors.secondary.dark);
+    root.style.setProperty('--secondary-darker', colors.secondary.darker);
 
-    stylesheet.insertRule(
-        `:root { --background: ${colors.background.default}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --background-elevated: ${colors.background.paper}; }`,
-        stylesheet.cssRules.length
-    );
+    root.style.setProperty('--background', colors.background.default);
+    root.style.setProperty('--background-elevated', colors.background.paper);
 
-    stylesheet.insertRule(
-        `:root { --surface: ${colors.surface.main}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --surface-hover: ${colors.surface.hovered}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --text: ${colors.text.primary}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --text-secondary: ${colors.text.secondary}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --text-muted: ${colors.text.muted}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --text-disabled: ${colors.text.disabled}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --border: ${colors.border.main}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --border-light: ${colors.border.light}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --border-lighter: ${colors.border.lighter}; }`,
-        stylesheet.cssRules.length
-    );
+    root.style.setProperty('--surface', colors.surface.main);
+    root.style.setProperty('--surface-hover', colors.surface.hovered);
 
-    stylesheet.insertRule(
-        `:root { --highlight: ${colors.highlight.main}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --highlight-light: ${colors.highlight.light}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --highlight-dark: ${colors.highlight.dark}; }`,
-        stylesheet.cssRules.length
-    );
+    root.style.setProperty('--text', colors.text.primary);
+    root.style.setProperty('--text-secondary', colors.text.secondary);
+    root.style.setProperty('--text-muted', colors.text.muted);
+    root.style.setProperty('--text-disabled', colors.text.disabled);
 
-    stylesheet.insertRule(
-        `:root { --error: ${colors.error.main}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --error-light: ${colors.error.light}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --error-dark: ${colors.error.dark}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --error-bg: ${colors.error.background}; }`,
-        stylesheet.cssRules.length
-    );
+    root.style.setProperty('--border', colors.border.main);
+    root.style.setProperty('--border-light', colors.border.light);
+    root.style.setProperty('--border-lighter', colors.border.lighter);
 
-    stylesheet.insertRule(
-        `:root { --success: ${colors.success.main}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --success-light: ${colors.success.light}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --success-dark: ${colors.success.dark}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --success-bg: ${colors.success.background}; }`,
-        stylesheet.cssRules.length
-    );
+    root.style.setProperty('--highlight', colors.highlight.main);
+    root.style.setProperty('--highlight-light', colors.highlight.light);
+    root.style.setProperty('--highlight-dark', colors.highlight.dark);
 
-    stylesheet.insertRule(
-        `:root { --warning: ${colors.warning.main}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --warning-light: ${colors.warning.light}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --warning-dark: ${colors.warning.dark}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --warning-bg: ${colors.warning.background}; }`,
-        stylesheet.cssRules.length
-    );
+    root.style.setProperty('--error', colors.error.main);
+    root.style.setProperty('--error-light', colors.error.light);
+    root.style.setProperty('--error-dark', colors.error.dark);
+    root.style.setProperty('--error-bg', colors.error.background);
 
-    stylesheet.insertRule(
-        `:root { --info: ${colors.info.main}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --info-light: ${colors.info.light}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --info-dark: ${colors.info.dark}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --info-bg: ${colors.info.background}; }`,
-        stylesheet.cssRules.length
-    );
+    root.style.setProperty('--success', colors.success.main);
+    root.style.setProperty('--success-light', colors.success.light);
+    root.style.setProperty('--success-dark', colors.success.dark);
+    root.style.setProperty('--success-bg', colors.success.background);
 
-    stylesheet.insertRule(
-        `:root { --shadow-sm: ${colors.shadow.small}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --shadow-md: ${colors.shadow.medium}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --shadow-lg: ${colors.shadow.large}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --shadow-xl: ${colors.shadow.extraLarge}; }`,
-        stylesheet.cssRules.length
-    );
+    root.style.setProperty('--warning', colors.warning.main);
+    root.style.setProperty('--warning-light', colors.warning.light);
+    root.style.setProperty('--warning-dark', colors.warning.dark);
+    root.style.setProperty('--warning-bg', colors.warning.background);
 
-    stylesheet.insertRule(
-        `:root { --radius-sm: ${colors.radius.small}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --radius-md: ${colors.radius.medium}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --radius-lg: ${colors.radius.large}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --radius-xl: ${colors.radius.large}; }`,
-        stylesheet.cssRules.length
-    );
-    stylesheet.insertRule(
-        `:root { --radius-full: ${colors.radius.full}; }`,
-        stylesheet.cssRules.length
-    );
+    root.style.setProperty('--info', colors.info.main);
+    root.style.setProperty('--info-light', colors.info.light);
+    root.style.setProperty('--info-dark', colors.info.dark);
+    root.style.setProperty('--info-bg', colors.info.background);
+
+    root.style.setProperty('--shadow-sm', colors.shadow.small);
+    root.style.setProperty('--shadow-md', colors.shadow.medium);
+    root.style.setProperty('--shadow-lg', colors.shadow.large);
+    root.style.setProperty('--shadow-xl', colors.shadow.extraLarge);
+
+    root.style.setProperty('--radius-sm', colors.radius.small);
+    root.style.setProperty('--radius-md', colors.radius.medium);
+    root.style.setProperty('--radius-lg', colors.radius.large);
+    root.style.setProperty('--radius-xl', colors.radius.large);
+    root.style.setProperty('--radius-full', colors.radius.full);
 };
 
 export const toggleThemeMode = (theme: Theme): Theme => {
@@ -236,7 +97,6 @@ export const setThemeMode = (theme: Theme, mode: 'light' | 'dark'): Theme => {
 export const initializeTheme = async (): Promise<Theme> => {
     try {
         const theme = await fetchTheme(defaults.theme || 'dark-blue');
-        console.log('Initialized theme:', theme);
         applyThemeToDOM(theme);
         return theme;
     } catch (error) {

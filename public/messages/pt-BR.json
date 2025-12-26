@@ -1,28 +1,27 @@
 {
+    "shared": {
+        "contactSupport": "Contactar Suporte",
+        "retry": "Tentar Novamente",
+        "back": "Voltar",
+        "loading": "Carregando...",
+        "getStarted": "Começar",
+        "learnMore": "Saiba Mais"
+    },
     "errors": {
         "500": {
-            "title": "Oops... Algo deu errado!",
-            "message": "Ocorreu um erro interno no servidor. Por favor, tente novamente mais tarde.",
-            "details": "Se o problema persistir, entre em contato com o suporte.",
-            "contactSupport": "Contatar Suporte",
-            "retry": "Recarregar Página",
-            "back": "Voltar à Página Anterior"
+            "title": "Algo deu errado.",
+            "message": "Ocorreu um erro inesperado. Por favor, tente novamente mais tarde.",
+            "details": "Se o problema persistir, por favor contate o suporte."
         },
         "404": {
             "title": "Página não encontrada.",
             "message": "A página que você está procurando não existe.",
-            "details": "Se o problema persistir, entre em contato com o suporte.",
-            "contactSupport": "Contatar Suporte",
-            "retry": "Recarregar Página",
-            "back": "Voltar à Página Anterior"
+            "details": "Se o problema persistir, por favor contate o suporte."
         },
         "401": {
             "title": "Acesso não autorizado.",
             "message": "Você não tem permissão para ver esta página.",
-            "details": "Se o problema persistir, entre em contato com o suporte.",
-            "contactSupport": "Contatar Suporte",
-            "retry": "Recarregar Página",
-            "back": "Voltar à Página Anterior"
+            "details": "Se o problema persistir, por favor contate o suporte."
         }
     },
     "landing": {
@@ -30,8 +29,18 @@
             "home": "Início",
             "features": "Recursos",
             "pricing": "Preços",
-            "about": "Sobre Nós",
-            "contact": "Contato"
+            "ctas": {
+                "login": "Entrar"
+            }
+        },
+        "hero": {
+            "title": "Menos Esforço. Mais Resultados. Potencializado por IA.",
+            "description": "uFlow ajuda você a realizar suas tarefas com menos estresse e mais confiança — para que você possa se concentrar no que realmente importa.",
+            "bulletPoints": {
+                "1": "Inteligência orientada por dados",
+                "2": "Escalável, seguro e confiável",
+                "3": "Potencializado por modelos modernos de IA"
+            }
         }
     }
 }

@@ -2,70 +2,70 @@
     "current": "dark",
     "light": {
         "primary": {
-            "light": "#60A5FA",
-            "main": "#3B82F6",
-            "dark": "#2563EB",
-            "darker": "#1D4ED8"
+            "light": "#E0E7FF",
+            "main": "#2563EB",
+            "dark": "#1D4ED8",
+            "darker": "#1E3A8A"
         },
         "secondary": {
-            "light": "#A78BFA",
-            "main": "#8B5CF6",
-            "dark": "#7C3AED",
-            "darker": "#6D28D9"
+            "light": "#F1F5F9",
+            "main": "#475569",
+            "dark": "#1E293B",
+            "darker": "#0F172A"
         },
         "background": {
-            "default": "#FFFFFF",
-            "paper": "#F9FAFB"
+            "default": "#F8FAFC",
+            "paper": "#FFFFFF"
         },
         "surface": {
-            "main": "#F3F4F6",
-            "hovered": "#E5E7EB"
+            "main": "#FFFFFF",
+            "hovered": "#F1F5F9"
         },
         "text": {
-            "primary": "#111827",
-            "secondary": "#6B7280",
-            "disabled": "#9CA3AF",
-            "muted": "#D1D5DB"
+            "primary": "#0F172A",
+            "secondary": "#334155",
+            "disabled": "#94A3B8",
+            "muted": "#64748B"
         },
         "border": {
-            "main": "#E5E7EB",
-            "light": "#F3F4F6",
-            "lighter": "#F9FAFB"
+            "main": "#E2E8F0",
+            "light": "#F1F5F9",
+            "lighter": "#F8FAFC"
         },
         "highlight": {
-            "main": "#3B82F6",
-            "light": "#DBEAFE",
-            "dark": "#1E40AF"
+            "main": "#38BDF8",
+            "light": "#E0F2FE",
+            "dark": "#0369A1"
         },
         "error": {
-            "main": "#EF4444",
+            "main": "#DC2626",
             "light": "#FEE2E2",
-            "dark": "#DC2626",
+            "dark": "#991B1B",
             "background": "#FEF2F2"
         },
         "success": {
-            "main": "#10B981",
+            "main": "#059669",
             "light": "#D1FAE5",
-            "dark": "#059669",
+            "dark": "#064E3B",
             "background": "#ECFDF5"
         },
         "warning": {
-            "main": "#F59E0B",
+            "main": "#D97706",
             "light": "#FEF3C7",
-            "dark": "#D97706",
+            "dark": "#92400E",
             "background": "#FFFBEB"
         },
         "info": {
-            "main": "#3B82F6",
+            "main": "#2563EB",
             "light": "#DBEAFE",
-            "dark": "#2563EB",
+            "dark": "#1E40AF",
             "background": "#EFF6FF"
         },
         "shadow": {
-            "small": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
-            "medium": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
-            "large": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
-            "extraLarge": "0 20px 25px -5px rgba(0, 0, 0, 0.1)"
+            "small": "0 1px 2px rgba(15, 23, 42, 0.05)",
+            "medium": "0 4px 6px -1px rgba(15, 23, 42, 0.1)",
+            "large": "0 10px 15px -3px rgba(15, 23, 42, 0.1)",
+            "extraLarge": "0 20px 25px -5px rgba(15, 23, 42, 0.15)"
         },
         "radius": {
             "small": "4px",
@@ -79,67 +79,67 @@
             "light": "#60A5FA",
             "main": "#3B82F6",
             "dark": "#2563EB",
-            "darker": "#1E3A8A"
+            "darker": "#1D4ED8"
         },
         "secondary": {
-            "light": "#C084FC",
-            "main": "#A855F7",
-            "dark": "#9333EA",
-            "darker": "#7E22CE"
+            "light": "#94A3B8",
+            "main": "#64748B",
+            "dark": "#475569",
+            "darker": "#334155"
         },
         "background": {
-            "default": "#030712",
-            "paper": "#0F1629"
+            "default": "#020617",
+            "paper": "#0F172A"
         },
         "surface": {
-            "main": "#1A2332",
-            "hovered": "#243049"
+            "main": "#1E293B",
+            "hovered": "#334155"
         },
         "text": {
-            "primary": "#F9FAFB",
-            "secondary": "#D1D5DB",
-            "disabled": "#6B7280",
-            "muted": "#4B5563"
+            "primary": "#F8FAFC",
+            "secondary": "#CBD5E1",
+            "disabled": "#475569",
+            "muted": "#94A3B8"
         },
         "border": {
-            "main": "#1F2937",
-            "light": "#374151",
-            "lighter": "#4B5563"
+            "main": "#334155",
+            "light": "#1E293B",
+            "lighter": "#0F172A"
         },
         "highlight": {
-            "main": "#3B82F6",
-            "light": "#1E40AF",
-            "dark": "#1E3A8A"
+            "main": "#7DD3FC",
+            "light": "#0C4A6E",
+            "dark": "#E0F2FE"
         },
         "error": {
-            "main": "#F87171",
-            "light": "#FCA5A5",
-            "dark": "#DC2626",
+            "main": "#EF4444",
+            "light": "#450A0A",
+            "dark": "#FCA5A5",
             "background": "#7F1D1D"
         },
         "success": {
-            "main": "#34D399",
-            "light": "#6EE7B7",
-            "dark": "#059669",
-            "background": "#064E3B"
+            "main": "#10B981",
+            "light": "#064E3B",
+            "dark": "#A7F3D0",
+            "background": "#065F46"
         },
         "warning": {
-            "main": "#FBBF24",
-            "light": "#FCD34D",
-            "dark": "#D97706",
+            "main": "#F59E0B",
+            "light": "#451A03",
+            "dark": "#FDE68A",
             "background": "#78350F"
         },
         "info": {
-            "main": "#60A5FA",
-            "light": "#93C5FD",
-            "dark": "#2563EB",
+            "main": "#3B82F6",
+            "light": "#172554",
+            "dark": "#BFDBFE",
             "background": "#1E3A8A"
         },
         "shadow": {
-            "small": "0 1px 2px 0 rgba(0, 0, 0, 0.3)",
-            "medium": "0 4px 6px -1px rgba(0, 0, 0, 0.4)",
-            "large": "0 10px 15px -3px rgba(0, 0, 0, 0.5)",
-            "extraLarge": "0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 0 60px rgba(59, 130, 246, 0.15)"
+            "small": "0 1px 2px rgba(0, 0, 0, 0.4)",
+            "medium": "0 4px 6px -1px rgba(0, 0, 0, 0.5)",
+            "large": "0 10px 15px -3px rgba(0, 0, 0, 0.6)",
+            "extraLarge": "0 20px 25px -5px rgba(0, 0, 0, 0.8)"
         },
         "radius": {
             "small": "4px",

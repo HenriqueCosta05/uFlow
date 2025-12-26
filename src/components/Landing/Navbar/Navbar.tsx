@@ -1,26 +1,27 @@
 import {
     BoxComponent,
+    ButtonComponent,
     LinkComponent,
     SelectComponent,
     SelectItemComponent,
     TypographyComponent,
-} from 'lora-ds'
-import { useTranslation } from 'react-i18next'
-import BRFlag from '../../../assets/flags/br.svg?react'
-import ESFlag from '../../../assets/flags/es.svg?react'
-import USFlag from '../../../assets/flags/us.svg?react'
-import UflowLogo from '../../../assets/uFlow.svg?react'
+} from 'lora-ds';
+import { useTranslation } from 'react-i18next';
+import BRFlag from '../../../assets/flags/br.svg?react';
+import ESFlag from '../../../assets/flags/es.svg?react';
+import USFlag from '../../../assets/flags/us.svg?react';
+import UflowLogo from '../../../assets/uFlow.svg?react';
 import useLanguageSwitch, {
     type Locale,
-} from '../../../hooks/useLanguageSwitch'
-import NavbarStyles from './Navbar.module.css'
+} from '../../../hooks/useLanguageSwitch';
+import NavbarStyles from './Navbar.module.css';
 const Navbar = () => {
-    const { t } = useTranslation()
-    const { switchLanguage, locale } = useLanguageSwitch()
+    const { t } = useTranslation();
+    const { switchLanguage, locale } = useLanguageSwitch();
 
     const handleSwitchLanguage = (locale: Locale) => {
-        switchLanguage(locale as Locale)
-    }
+        switchLanguage(locale as Locale);
+    };
 
     return (
         <BoxComponent className={NavbarStyles.Navbar__Wrapper}>
@@ -50,18 +51,12 @@ const Navbar = () => {
             >
                 {t('landing.navbar.pricing')}
             </LinkComponent>
-            <LinkComponent
-                href="#about"
-                className={NavbarStyles.Navbar__MenuItem}
+            <ButtonComponent
+                variant="secondary"
+                className={NavbarStyles.Navbar__Login__Button}
             >
-                {t('landing.navbar.about')}
-            </LinkComponent>
-            <LinkComponent
-                href="#contact"
-                className={NavbarStyles.Navbar__MenuItem}
-            >
-                {t('landing.navbar.contact')}
-            </LinkComponent>
+                {t('shared.getStarted')}
+            </ButtonComponent>
             <BoxComponent
                 className={NavbarStyles.Navbar__LanguageSelector__Wrapper}
             >
@@ -105,7 +100,7 @@ const Navbar = () => {
                 </SelectComponent>
             </BoxComponent>
         </BoxComponent>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
