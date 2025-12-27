@@ -1,20 +1,35 @@
 :root {
-    --navbar-height: 60px;
+    --navbar-height: 70px;
     --navbar-bg-color: var(--background-elevated);
 }
 
 .Navbar__Wrapper {
+    position: sticky;
+    top: 1rem;
+    z-index: 1000;
     width: 85%;
+    max-width: 1400px;
     height: var(--navbar-height);
-    background-color: var(--navbar-bg-color);
-    color: var(--navbar-text-color);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: var(--text);
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin: 2rem auto;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 2rem;
     box-shadow: var(--shadow-lg);
     border-radius: 48px;
+    border: 1px solid var(--border-light);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+    .Navbar__Wrapper {
+        background: var(--navbar-bg-color);
+    }
 }
 
 .Navbar__Logo__Wrapper {
@@ -41,15 +56,50 @@
 }
 
 .Navbar__Menu {
-    margin-left: auto;
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
 }
 
 .Navbar__MenuItem {
+    position: relative;
     cursor: pointer;
-    transition: color 0.3s;
-    color: var(--secondary-light);
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0.5rem 0;
+}
+
+.Navbar__MenuItem:hover {
+    color: var(--primary);
+}
+
+.Navbar__MenuItem::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Navbar__MenuItem:hover::after {
+    width: 100%;
+}
+
+.Navbar__Login__Button {
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Navbar__Login__Button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 .Navbar__LanguageSelector__Wrapper {
@@ -76,4 +126,175 @@
 
 .Navbar__LanguageSelector__Item button p {
     width: fit-content;
+}
+
+.Navbar__MobileMenuToggle {
+    display: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--text);
+    font-size: 1.75rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navbar__MobileMenuToggle svg {
+    fill: var(--text) !important;
+    stroke: var(--text) !important;
+    width: 24px;
+    height: 24px;
+    z-index: 1001;
+}
+
+.Navbar__MobileMenuToggle:hover {
+    background: var(--surface-hover);
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+    .Navbar__Wrapper {
+        width: 90%;
+        padding: 0 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .Navbar__Logo__Image {
+        height: 80px;
+    }
+
+    .Navbar__Logo__Text {
+        font-size: 1.75rem;
+    }
+
+    .Navbar__Menu {
+        gap: 1.5rem;
+    }
+
+    .Navbar__MenuItem {
+        font-size: 0.95rem;
+    }
+
+    .Navbar__LanguageSelector__Item {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Navbar__Wrapper {
+        position: sticky;
+        top: 0.5rem;
+        width: 95%;
+        height: auto;
+        min-height: var(--navbar-height);
+        flex-wrap: wrap;
+        padding: 1rem;
+        margin: 1rem auto;
+        border-radius: 24px;
+        gap: 0;
+        max-width: 100vw;
+    }
+
+    .Navbar__Logo__Wrapper {
+        flex: 1;
+        min-width: 150px;
+    }
+
+    .Navbar__Logo__Image {
+        height: 60px;
+    }
+
+    .Navbar__Logo__Text {
+        font-size: 1.5rem;
+    }
+
+    .Navbar__Menu {
+        order: 5;
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .Navbar__Menu--open {
+        max-height: 500px;
+        opacity: 1;
+        margin-top: 1rem;
+        gap: 0.5rem;
+    }
+
+    .Navbar__MenuItem {
+        padding: 0.75rem 1rem;
+        border-radius: 12px;
+        text-align: left;
+        width: 100%;
+        background: var(--surface);
+    }
+
+    .Navbar__MenuItem:hover {
+        background: var(--surface-hover);
+    }
+
+    .Navbar__MenuItem::after {
+        display: none;
+    }
+
+    .Navbar__Login__Button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+        width: 100%;
+        margin: 0.5rem 0 0 0;
+    }
+
+    .Navbar__LanguageSelector__Wrapper {
+        margin: 0.5rem 0 0 0;
+        width: 100%;
+    }
+
+    .Navbar__MobileMenuToggle {
+        display: flex;
+    }
+}
+
+/* Small mobile */
+@media screen and (max-width: 480px) {
+    .Navbar__Wrapper {
+        max-width: 100%;
+        margin: 0.5rem;
+        border-radius: 16px;
+        padding: 0.5rem 0;
+    }
+
+    .Navbar__Logo__Image {
+        height: 50px;
+    }
+
+    .Navbar__MobileMenuToggle {
+        font-size: 1.5rem;
+        width: 48px;
+        height: 36px;
+        margin-right: 8px;
+    }
+
+    .Navbar__MobileMenuToggle svg {
+        width: 24px;
+        height: 24px;
+        stroke: var(--text) !important;
+    }
+
+    .Navbar__Logo__Text {
+        font-size: 1.25rem;
+    }
+
+    .Navbar__Login__Button {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
 }
