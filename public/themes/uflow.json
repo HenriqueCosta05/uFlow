@@ -1,0 +1,151 @@
+{
+    "current": "dark",
+    "light": {
+        "primary": {
+            "light": "#FFEDD5",
+            "main": "#EA580C",
+            "dark": "#C2410C",
+            "darker": "#7C2D12"
+        },
+        "secondary": {
+            "light": "#DCFCE7",
+            "main": "#166534",
+            "dark": "#14532D",
+            "darker": "#064E3B"
+        },
+        "background": {
+            "default": "#FDFCFB",
+            "paper": "#FFFFFF"
+        },
+        "surface": {
+            "main": "#FFFFFF",
+            "hovered": "#FFF7ED"
+        },
+        "text": {
+            "primary": "#1C1917",
+            "secondary": "#44403C",
+            "disabled": "#A8A29E",
+            "muted": "#78716C"
+        },
+        "border": {
+            "main": "#E7E5E4",
+            "light": "#F5F5F4",
+            "lighter": "#FAFAF9"
+        },
+        "highlight": {
+            "main": "#FDE047",
+            "light": "#FEF9C3",
+            "dark": "#A16207"
+        },
+        "error": {
+            "main": "#DC2626",
+            "light": "#FEE2E2",
+            "dark": "#991B1B",
+            "background": "#FEF2F2"
+        },
+        "success": {
+            "main": "#15803D",
+            "light": "#DCFCE7",
+            "dark": "#166534",
+            "background": "#F0FDF4"
+        },
+        "warning": {
+            "main": "#D97706",
+            "light": "#FEF3C7",
+            "dark": "#92400E",
+            "background": "#FFFBEB"
+        },
+        "info": {
+            "main": "#0284C7",
+            "light": "#E0F2FE",
+            "dark": "#075985",
+            "background": "#F0F9FF"
+        },
+        "shadow": {
+            "small": "0 1px 2px rgba(124, 45, 18, 0.05)",
+            "medium": "0 4px 6px -1px rgba(124, 45, 18, 0.1)",
+            "large": "0 10px 15px -3px rgba(124, 45, 18, 0.1)",
+            "extraLarge": "0 20px 25px -5px rgba(124, 45, 18, 0.15)"
+        },
+        "radius": {
+            "small": "4px",
+            "medium": "10px",
+            "large": "16px",
+            "full": "9999px"
+        }
+    },
+    "dark": {
+        "primary": {
+            "light": "#FB923C",
+            "main": "#F97316",
+            "dark": "#EA580C",
+            "darker": "#9A3412"
+        },
+        "secondary": {
+            "light": "#4ADE80",
+            "main": "#22C55E",
+            "dark": "#16A34A",
+            "darker": "#14532D"
+        },
+        "background": {
+            "default": "#0C0A09",
+            "paper": "#1C1917"
+        },
+        "surface": {
+            "main": "#292524",
+            "hovered": "#44403C"
+        },
+        "text": {
+            "primary": "#FAFAF9",
+            "secondary": "#D6D3D1",
+            "disabled": "#57534E",
+            "muted": "#A8A29E"
+        },
+        "border": {
+            "main": "#44403C",
+            "light": "#292524",
+            "lighter": "#1C1917"
+        },
+        "highlight": {
+            "main": "#FACC15",
+            "light": "#422006",
+            "dark": "#FEF08A"
+        },
+        "error": {
+            "main": "#EF4444",
+            "light": "#450A0A",
+            "dark": "#FCA5A5",
+            "background": "#7F1D1D"
+        },
+        "success": {
+            "main": "#22C55E",
+            "light": "#052E16",
+            "dark": "#BBF7D0",
+            "background": "#14532D"
+        },
+        "warning": {
+            "main": "#F59E0B",
+            "light": "#451A03",
+            "dark": "#FDE68A",
+            "background": "#78350F"
+        },
+        "info": {
+            "main": "#38BDF8",
+            "light": "#082F49",
+            "dark": "#BAE6FD",
+            "background": "#0C4A6E"
+        },
+        "shadow": {
+            "small": "0 1px 2px rgba(0, 0, 0, 0.5)",
+            "medium": "0 4px 6px -1px rgba(0, 0, 0, 0.6)",
+            "large": "0 10px 15px -3px rgba(0, 0, 0, 0.7)",
+            "extraLarge": "0 20px 25px -5px rgba(0, 0, 0, 0.8)"
+        },
+        "radius": {
+            "small": "4px",
+            "medium": "10px",
+            "large": "16px",
+            "full": "9999px"
+        }
+    }
+}
