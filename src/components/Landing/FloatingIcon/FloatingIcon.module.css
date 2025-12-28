@@ -1,5 +1,4 @@
 @keyframes float {
-
     0%,
     100% {
         transform: translateY(0px);
@@ -11,7 +10,6 @@
 }
 
 @keyframes floatAlt {
-
     0%,
     100% {
         transform: translateY(0px) translateX(0px);
@@ -106,7 +104,6 @@
     }
 
     @keyframes float {
-
         0%,
         100% {
             transform: translateY(0px);
@@ -118,7 +115,6 @@
     }
 
     @keyframes floatAlt {
-
         0%,
         100% {
             transform: translateY(0px) translateX(0px);
@@ -142,7 +138,6 @@
     }
 
     @keyframes float {
-
         0%,
         100% {
             transform: translateY(0px);
@@ -154,7 +149,6 @@
     }
 
     @keyframes floatAlt {
-
         0%,
         100% {
             transform: translateY(0px) translateX(0px);
