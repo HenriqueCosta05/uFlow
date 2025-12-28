@@ -1,0 +1,277 @@
+.Integrations__Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.Integrations__Title {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.Integrations__Description {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.Integrations__List {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10ch;
+    width: 100%;
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+.Integrations__List > * {
+    width: 100%;
+    max-width: 180px;
+}
+
+.Integrations__Card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Integrations__Card > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.Integrations__Card > div > button {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+    transition: gap 0.3s ease;
+}
+
+.Integrations__Card button,
+.Integrations__Card button:hover,
+.Integrations__Card button:focus,
+.Integrations__Card button:active {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+
+.Integrations__Item {
+    font-weight: 600;
+    color: var(--text);
+    text-align: center;
+    font-size: 0.95rem;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Integrations__Card:hover .Integrations__Item {
+    color: var(--primary);
+}
+
+.Integrations__TooltipContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    max-width: 320px;
+    min-width: 250px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.15),
+        0 4px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.Integrations__TooltipContent h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.3;
+    background: transparent !important;
+}
+
+.Integrations__TooltipContent p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    background: transparent !important;
+}
+
+.Integrations__TooltipLink {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.Integrations__Card [role='tooltip'] {
+    z-index: 1000 !important;
+}
+
+.Integrations__Card [data-placement^='top'] [data-arrow] {
+    bottom: -4px;
+}
+
+.Integrations__Card [data-placement^='bottom'] [data-arrow] {
+    top: -4px;
+}
+
+.Integrations__Card [data-placement^='left'] [data-arrow] {
+    right: -4px;
+}
+
+.Integrations__Card [data-placement^='right'] [data-arrow] {
+    left: -4px;
+}
+
+@media screen and (max-width: 1024px) {
+    .Integrations__List {
+        grid-template-columns: 1fr auto 1fr;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .Integrations__TooltipContent {
+        max-width: 280px;
+        min-width: 240px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Integrations__Title {
+        font-size: clamp(1.75rem, 7vw, 2.5rem);
+    }
+
+    .Integrations__Description {
+        font-size: clamp(0.95rem, 3vw, 1.1rem);
+        max-width: 600px;
+    }
+
+    .Integrations__List {
+        max-width: 90%;
+        margin-right: 20ch;
+    }
+
+    .Integrations__List > * {
+        max-width: 140px;
+    }
+
+    .Integrations__Card > div {
+        gap: 0.75rem;
+    }
+
+    .Integrations__Card > div > button {
+        gap: 0.75rem;
+    }
+
+    .Integrations__Card button > div:first-child {
+        transform: scale(0.9);
+    }
+
+    .Integrations__Item {
+        font-size: 0.85rem;
+    }
+
+    .Integrations__TooltipContent {
+        max-width: 260px;
+        min-width: 220px;
+        padding: 0.875rem 1rem;
+    }
+
+    .Integrations__TooltipContent h4 {
+        font-size: 1rem;
+    }
+
+    .Integrations__TooltipContent p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Integrations__Wrapper {
+        gap: 1.75rem;
+    }
+
+    .Integrations__List {
+        gap: 6ch;
+        max-width: 75%;
+    }
+
+    .Integrations__List > * {
+        max-width: none;
+    }
+
+    .Integrations__Card {
+        padding: 1rem 0.5rem;
+    }
+
+    .Integrations__Card > div {
+        gap: 0.625rem;
+    }
+
+    .Integrations__Card > div > button {
+        gap: 0.625rem;
+    }
+
+    .Integrations__Card button > div:first-child {
+        transform: scale(0.75);
+    }
+
+    .Integrations__Item {
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+
+    .Integrations__TooltipContent {
+        max-width: calc(100vw - 2rem);
+        min-width: 0;
+        width: 260px;
+        padding: 0.75rem 0.875rem;
+    }
+
+    .Integrations__TooltipContent h4 {
+        font-size: 0.95rem;
+    }
+
+    .Integrations__TooltipContent p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+}
