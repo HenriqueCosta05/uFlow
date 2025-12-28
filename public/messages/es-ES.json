@@ -42,6 +42,40 @@
                 "2": "Escalable, seguro y confiable",
                 "3": "Impulsado por modelos de IA modernos"
             }
+        },
+        "integrations": {
+            "title": "Conéctate sin problemas con tus herramientas favoritas",
+            "description": "Conecta uFlow con tus herramientas y plataformas favoritas para optimizar tu flujo de trabajo y aumentar la productividad.",
+            "list": {
+                "0": {
+                    "tooltipText": "Integra Notion con uFlow para una gestión y colaboración de documentos sin problemas. <LinkComponent to='https://uflow.ai/integrations/notion' external={true}>¡Aprende más</LinkComponent>!",
+                    "name": "Notion"
+                },
+                "1": {
+                    "tooltipText": "Integra Slack con uFlow para mejorar la comunicación del equipo y optimizar los flujos de trabajo. <LinkComponent to='https://uflow.ai/integrations/slack' external={true}>¡Aprende más</LinkComponent>!",
+                    "name": "Slack"
+                },
+                "2": {
+                    "tooltipText": "Integra Google Drive con uFlow para un almacenamiento y compartición de archivos eficiente. <LinkComponent to='https://uflow.ai/integrations/google-drive' external={true}>¡Aprende más</LinkComponent>!",
+                    "name": "Google Drive"
+                },
+                "3": {
+                    "tooltipText": "Integra Microsoft Teams con uFlow para una colaboración y comunicación de equipo mejoradas. <LinkComponent to='https://uflow.ai/integrations/microsoft-teams' external={true}>¡Aprende más</LinkComponent>!",
+                    "name": "Microsoft Teams"
+                },
+                "4": {
+                    "tooltipText": "Integra Dropbox con uFlow para un almacenamiento y compartición de archivos sin complicaciones. <LinkComponent to='https://uflow.ai/integrations/dropbox' external={true}>¡Aprende más</LinkComponent>!",
+                    "name": "Dropbox"
+                },
+                "5": {
+                    "tooltipText": "Integra Jira con uFlow para una gestión de proyectos y seguimiento de incidencias eficientes. <LinkComponent to='https://uflow.ai/integrations/jira' external={true}>¡Aprende más</LinkComponent>!",
+                    "name": "Jira"
+                },
+                "6": {
+                    "tooltipText": "Integra Google Calendar con uFlow para una gestión efectiva de tu agenda y citas. <LinkComponent to='https://uflow.ai/integrations/google-calendar' external={true}>¡Aprende más</LinkComponent>!",
+                    "name": "Google Calendar"
+                }
+            }
         }
     }
 }
