@@ -5,35 +5,35 @@ import {
     SelectComponent,
     SelectItemComponent,
     TypographyComponent,
-} from 'lora-ds';
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import BRFlag from '../../../assets/flags/br.svg?react';
-import ESFlag from '../../../assets/flags/es.svg?react';
-import USFlag from '../../../assets/flags/us.svg?react';
-import MenuIcon from '../../../assets/icons/menu.svg?react';
-import UflowLogo from '../../../assets/uFlow.svg?react';
+} from 'lora-ds'
+import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import BRFlag from '../../../assets/flags/br.svg?react'
+import ESFlag from '../../../assets/flags/es.svg?react'
+import USFlag from '../../../assets/flags/us.svg?react'
+import MenuIcon from '../../../assets/icons/menu.svg?react'
+import UflowLogo from '../../../assets/uFlow.svg?react'
 import useLanguageSwitch, {
     type Locale,
-} from '../../../hooks/useLanguageSwitch';
-import NavbarStyles from './Navbar.module.css';
+} from '../../../hooks/useLanguageSwitch'
+import NavbarStyles from './Navbar.module.css'
 
 const Navbar = () => {
-    const { t } = useTranslation();
-    const { switchLanguage, locale } = useLanguageSwitch();
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const { t } = useTranslation()
+    const { switchLanguage, locale } = useLanguageSwitch()
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
     const handleSwitchLanguage = (locale: Locale) => {
-        switchLanguage(locale as Locale);
-    };
+        switchLanguage(locale as Locale)
+    }
 
     const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
+        setIsMobileMenuOpen(!isMobileMenuOpen)
+    }
 
     const closeMobileMenu = () => {
-        setIsMobileMenuOpen(false);
-    };
+        setIsMobileMenuOpen(false)
+    }
 
     return (
         <BoxComponent className={NavbarStyles.Navbar__Wrapper}>
@@ -122,7 +122,7 @@ const Navbar = () => {
                 </BoxComponent>
             </BoxComponent>
         </BoxComponent>
-    );
-};
+    )
+}
 
-export default Navbar;
+export default Navbar
