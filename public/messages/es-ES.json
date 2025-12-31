@@ -105,5 +105,35 @@
                 }
             }
         }
+    },
+    "footer": {
+        "description": "uFlow es una plataforma impulsada por IA diseñada para optimizar la toma de notas y la gestión del conocimiento, ayudándote a trabajar de manera más inteligente y eficiente.",
+        "rights": "Todos los derechos reservados.",
+        "product": {
+            "title": "Producto",
+            "features": "Características",
+            "pricing": "Precios",
+            "integrations": "Integraciones",
+            "changelog": "Registro de cambios"
+        },
+        "resources": {
+            "title": "Recursos",
+            "documentation": "Documentación",
+            "tutorials": "Tutoriales",
+            "blog": "Blog",
+            "support": "Soporte"
+        },
+        "company": {
+            "title": "Empresa",
+            "about": "Acerca de",
+            "careers": "Carreras",
+            "contact": "Contacto",
+            "partners": "Socios"
+        },
+        "legal": {
+            "privacy": "Política de Privacidad",
+            "terms": "Términos de Servicio",
+            "cookies": "Configuración de Cookies"
+        }
     }
 }

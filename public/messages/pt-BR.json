@@ -105,5 +105,35 @@
                 }
             }
         }
+    },
+    "footer": {
+        "description": "uFlow é uma plataforma inovadora projetada para otimizar sua produtividade e simplificar suas tarefas diárias com o poder da inteligência artificial.",
+        "rights": "Todos os direitos reservados.",
+        "product": {
+            "title": "Produto",
+            "features": "Características",
+            "pricing": "Preços",
+            "integrations": "Integrações",
+            "changelog": "Registro de mudanças"
+        },
+        "resources": {
+            "title": "Recursos",
+            "documentation": "Documentação",
+            "tutorials": "Tutoriais",
+            "blog": "Blog",
+            "support": "Suporte"
+        },
+        "company": {
+            "title": "Empresa",
+            "about": "Sobre",
+            "careers": "Carreiras",
+            "contact": "Contato",
+            "partners": "Parceiros"
+        },
+        "legal": {
+            "privacy": "Política de Privacidade",
+            "terms": "Termos de Serviço",
+            "cookies": "Configurações de Cookies"
+        }
     }
 }

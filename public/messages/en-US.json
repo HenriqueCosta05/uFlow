@@ -105,5 +105,35 @@
                 }
             }
         }
+    },
+    "footer": {
+        "description": "uFlow empowers you to get things done with less stress and more confidence — so you can focus on what really matters.",
+        "rights": "All rights reserved.",
+        "product": {
+            "title": "Product",
+            "features": "Features",
+            "pricing": "Pricing",
+            "integrations": "Integrations",
+            "changelog": "Changelog"
+        },
+        "resources": {
+            "title": "Resources",
+            "documentation": "Documentation",
+            "tutorials": "Tutorials",
+            "blog": "Blog",
+            "support": "Support"
+        },
+        "company": {
+            "title": "Company",
+            "about": "About",
+            "careers": "Careers",
+            "contact": "Contact",
+            "partners": "Partners"
+        },
+        "legal": {
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service",
+            "cookies": "Cookies Settings"
+        }
     }
 }

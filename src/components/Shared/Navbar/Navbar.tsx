@@ -15,7 +15,7 @@ import MenuIcon from '../../../assets/icons/menu.svg?react';
 import UflowLogo from '../../../assets/uFlow.svg?react';
 import useLanguageSwitch, {
     type Locale,
-} from '../../hooks/useLanguageSwitch';
+} from '../../../hooks/useLanguageSwitch';
 import NavbarStyles from './Navbar.module.css';
 
 const Navbar = () => {

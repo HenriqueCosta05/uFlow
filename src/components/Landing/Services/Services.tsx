@@ -1,13 +1,13 @@
-import { BoxComponent, TypographyComponent } from 'lora-ds';
-import { useTranslation } from 'react-i18next';
-import ServicesStyles from './Services.module.css';
+import { BoxComponent, TypographyComponent } from 'lora-ds'
+import { useTranslation } from 'react-i18next'
+import ServicesStyles from './Services.module.css'
 
 const Services = () => {
-    const { t } = useTranslation();
+    const { t } = useTranslation()
 
     const servicesList = t('landing.services.list', {
         returnObjects: true,
-    });
+    })
     return (
         <BoxComponent
             className={ServicesStyles.Services__Wrapper}
@@ -40,7 +40,7 @@ const Services = () => {
                         typeof servicesList === 'object' &&
                         Object.values(servicesList).map(
                             (
-                                service: { title: string; description: string; },
+                                service: { title: string; description: string },
                                 index
                             ) => (
                                 <BoxComponent
@@ -69,7 +69,7 @@ const Services = () => {
                 </BoxComponent>
             </BoxComponent>
         </BoxComponent>
-    );
-};
+    )
+}
 
-export default Services;
+export default Services

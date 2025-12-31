@@ -1,0 +1,305 @@
+.Footer__Wrapper {
+    width: 100%;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    margin-top: auto;
+}
+
+.Footer__Container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem 2rem;
+}
+
+.Footer__TopSection {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Brand Section */
+.Footer__Brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.Footer__LogoContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.Footer__Logo {
+    width: 32px;
+    height: 32px;
+}
+
+.Footer__LogoText {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+
+.Footer__Description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    max-width: 400px;
+    margin: 0;
+}
+
+.Footer__SocialLinks {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.Footer__SocialLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.Footer__SocialLink:hover {
+    color: var(--primary);
+    background: var(--background-elevated);
+    border-color: var(--border);
+    transform: translateY(-2px);
+}
+
+.Footer__SocialLink svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Links Section */
+.Footer__LinksContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.Footer__LinkColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Footer__ColumnTitle {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.Footer__ColumnLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.Footer__Link {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    width: fit-content;
+}
+
+.Footer__Link:hover {
+    color: var(--primary);
+}
+
+/* Bottom Section */
+.Footer__BottomSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+
+.Footer__Copyright {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.Footer__LegalLinks {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.Footer__LegalLink {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.2s ease;
+}
+
+.Footer__LegalLink:hover {
+    color: var(--text);
+    text-decoration-color: var(--text);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .Footer__Container {
+        padding: 3.5rem 1.5rem 1.75rem;
+    }
+
+    .Footer__TopSection {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .Footer__LinksContainer {
+        gap: 2.5rem;
+    }
+
+    .Footer__Description {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Footer__Container {
+        padding: 3rem 1.25rem 1.5rem;
+    }
+
+    .Footer__TopSection {
+        gap: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .Footer__LinksContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 1.5rem;
+    }
+
+    .Footer__LinkColumn:last-child {
+        grid-column: span 2;
+    }
+
+    .Footer__BottomSection {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding-top: 1.75rem;
+    }
+
+    .Footer__LegalLinks {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Footer__Container {
+        padding: 2.5rem 1rem 1.25rem;
+    }
+
+    .Footer__TopSection {
+        gap: 2rem;
+        padding-bottom: 1.75rem;
+    }
+
+    .Footer__LogoContainer {
+        gap: 0.625rem;
+    }
+
+    .Footer__Logo {
+        width: 28px;
+        height: 28px;
+    }
+
+    .Footer__LogoText {
+        font-size: 1.125rem;
+    }
+
+    .Footer__Description {
+        font-size: 0.9rem;
+    }
+
+    .Footer__SocialLinks {
+        gap: 0.75rem;
+    }
+
+    .Footer__SocialLink {
+        width: 32px;
+        height: 32px;
+    }
+
+    .Footer__LinksContainer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .Footer__LinkColumn:last-child {
+        grid-column: span 1;
+    }
+
+    .Footer__ColumnTitle {
+        font-size: 0.9rem;
+    }
+
+    .Footer__Link {
+        font-size: 0.875rem;
+    }
+
+    .Footer__BottomSection {
+        padding-top: 1.5rem;
+        gap: 1.25rem;
+    }
+
+    .Footer__Copyright {
+        font-size: 0.8125rem;
+    }
+
+    .Footer__LegalLinks {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .Footer__LegalLink {
+        font-size: 0.8125rem;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 360px) {
+    .Footer__Container {
+        padding: 2rem 0.875rem 1rem;
+    }
+
+    .Footer__Description {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+
+    .Footer__SocialLink {
+        width: 30px;
+        height: 30px;
+    }
+
+    .Footer__SocialLink svg {
+        width: 18px;
+        height: 18px;
+    }
+}
