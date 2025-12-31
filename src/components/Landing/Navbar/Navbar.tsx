@@ -57,13 +57,6 @@ const Navbar = () => {
                 className={`${NavbarStyles.Navbar__Menu} ${isMobileMenuOpen ? NavbarStyles['Navbar__Menu--open'] : ''}`}
             >
                 <LinkComponent
-                    href="#home"
-                    className={NavbarStyles.Navbar__MenuItem}
-                    onClick={closeMobileMenu}
-                >
-                    {t('landing.navbar.home')}
-                </LinkComponent>
-                <LinkComponent
                     href="#features"
                     className={NavbarStyles.Navbar__MenuItem}
                     onClick={closeMobileMenu}
@@ -71,11 +64,11 @@ const Navbar = () => {
                     {t('landing.navbar.features')}
                 </LinkComponent>
                 <LinkComponent
-                    href="#pricing"
+                    href="/integrations"
                     className={NavbarStyles.Navbar__MenuItem}
                     onClick={closeMobileMenu}
                 >
-                    {t('landing.navbar.pricing')}
+                    {t('landing.navbar.integrations')}
                 </LinkComponent>
 
                 <ButtonComponent

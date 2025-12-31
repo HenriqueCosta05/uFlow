@@ -16,7 +16,9 @@
         "404": {
             "title": "Página não encontrada.",
             "message": "A página que você está procurando não existe.",
-            "details": "Se o problema persistir, por favor contate o suporte."
+            "details": "Se o problema persistir, por favor contate o suporte.",
+            "goHome": "Voltar à Página Inicial",
+            "contactSupport": "Entre em Contato com o Suporte"
         },
         "401": {
             "title": "Acesso não autorizado.",
@@ -28,7 +30,7 @@
         "navbar": {
             "home": "Início",
             "features": "Recursos",
-            "pricing": "Preços",
+            "integrations": "Integrações Disponíveis",
             "ctas": {
                 "login": "Entrar"
             }
@@ -73,6 +75,33 @@
                 "6": {
                     "tooltipText": "Integre o Google Calendar com o uFlow para um gerenciamento eficaz da sua agenda e compromissos. <LinkComponent to='https://uflow.ai/integrations/google-calendar' external={true}>Saiba mais</LinkComponent>!",
                     "name": "Google Calendar"
+                }
+            }
+        },
+        "services": {
+            "subtitle": "Nossos Recursos",
+            "title": "Anotações Inteligentes Potencializadas por IA",
+            "description": "Capture ideias, organize conhecimentos e transforme notas em insights acionáveis — tudo automaticamente, tudo em um só lugar.",
+            "list": {
+                "0": {
+                    "title": "Captura Automática de Notas",
+                    "description": "O uFlow captura automaticamente notas de diversas fontes, garantindo que nenhuma ideia seja perdida."
+                },
+                "1": {
+                    "title": "Organização Inteligente",
+                    "description": "Utilizando IA avançada, o uFlow organiza suas notas de maneira lógica e acessível."
+                },
+                "2": {
+                    "title": "Geração de Insights Acionáveis",
+                    "description": "Transforme suas notas em tarefas, lembretes e projetos com apenas alguns cliques."
+                },
+                "3": {
+                    "title": "Busca Potencializada por IA",
+                    "description": "Encontre rapidamente qualquer nota ou informação usando nossa função de busca avançada impulsionada por IA."
+                },
+                "4": {
+                    "title": "Busca Que Pensa Como Você",
+                    "description": "Encontre o que precisa instantaneamente com uma busca semântica que entende o contexto, não apenas palavras-chave."
                 }
             }
         }

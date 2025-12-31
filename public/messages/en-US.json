@@ -16,7 +16,9 @@
         "404": {
             "title": "Page not found.",
             "message": "The page you are looking for does not exist.",
-            "details": "If the problem persists, please contact support."
+            "details": "If the problem persists, please contact support.",
+            "goHome": "Go to Homepage",
+            "contactSupport": "Contact Support"
         },
         "401": {
             "title": "Unauthorized access.",
@@ -28,7 +30,7 @@
         "navbar": {
             "home": "Home",
             "features": "Features",
-            "pricing": "Pricing",
+            "integrations": "Available Integrations",
             "ctas": {
                 "login": "Log In"
             }
@@ -73,6 +75,33 @@
                 "6": {
                     "tooltipText": "Integrate Google Calendar with uFlow for effective management of your schedule and appointments. <LinkComponent to='https://uflow.ai/integrations/google-calendar' external={true}>Learn more</LinkComponent>!",
                     "name": "Google Calendar"
+                }
+            }
+        },
+        "services": {
+            "subtitle": "Our Features",
+            "title": "Smart Note-Taking Powered by AI",
+            "description": "Capture ideas, organize knowledge, and turn notes into actionable insights—all automatically, all in one place.",
+            "list": {
+                "0": {
+                    "title": "Instant Note Capture",
+                    "description": "Write, dictate, or paste anything and let AI instantly structure your notes so nothing gets lost."
+                },
+                "1": {
+                    "title": "Automatic Organization",
+                    "description": "AI categorizes, tags, and connects your notes intelligently, keeping your knowledge always easy to find."
+                },
+                "2": {
+                    "title": "Smart Summaries",
+                    "description": "Turn long notes into clear summaries in seconds, helping you review and understand information faster."
+                },
+                "3": {
+                    "title": "Actionable Insights",
+                    "description": "Extract key points, tasks, and decisions from your notes so ideas quickly turn into action."
+                },
+                "4": {
+                    "title": "Search That Thinks Like You",
+                    "description": "Find what you need instantly with semantic search that understands context, not just keywords."
                 }
             }
         }
